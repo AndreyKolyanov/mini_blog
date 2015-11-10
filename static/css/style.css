@@ -1,0 +1,94 @@
+.copyright{
+	text-align: center;
+}
+.record{
+	text-align: left;
+    font-size: 18px;
+	border: 1px solid #ccc;
+   	margin-bottom: -1px;
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+}
+.record .secondary{
+    font-size: 12px;
+    color: darkgrey;
+}
+.record .record-info a{
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+.small_photo{
+    float:left;
+    margin-right: 5px;
+}
+.counter{
+    margin-top: 5px;
+    float:left;
+}
+.user{
+    border: 1px solid #ccc;
+    margin-bottom: -1px;
+    height:120px;
+	padding-top:5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.user_link{
+    font-size: 20px;
+    color: black;
+}
+.user a:hover{
+    color: #333;
+}
+.pager li a {
+    color: black;
+}
+.add-form{
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.form-control{
+    margin-bottom: 5px;
+    resize: none;
+}
+#header{
+	padding: 20px 20px 20px 20px;
+}
+
+#left-menu{
+	border: 1px solid #ccc;
+    border-top: 0px;
+}
+
+#content{
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	text-align:center;
+}
+#footer{
+	border: 1px solid #e7e7e7;
+	margin-bottom: 10px;
+	padding-top: 5px;
+    
+}
+
+#loginform{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+#loginbutton{
+	width: 45%;
+}
+#signinbutton{
+	width: 45%;
+input{
+	margin-bottom: 5px;
+}
+
+
+

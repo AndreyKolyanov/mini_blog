@@ -1,0 +1,50 @@
+{% extends "profile.html" %}
+{% block title %}<title>Настройки</title>{% endblock %}
+{% block content %}
+   {% block userinfo %}
+       {{ block.super }}
+   {% endblock %}
+        <div class="col-lg-4 col-lg-offset-2" id="header">
+           <form action="/change_settings/" method="post" enctype="multipart/form-data">
+               {% csrf_token %}
+                <div class="input-group">
+                  <span class="input-group-addon">Имя</span>
+                  <input type="text" class="form-control" name="firstname" placeholder="Имя" value="{{user.first_name}}">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">Фамилия</span>
+                  <input type="text" class="form-control" name="surname" placeholder="Фамилия" value="{{user.last_name}}">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">E-mail</span>
+                  <input type="email" class="form-control" name="email" placeholder="E-mail" value="{{user.email}}">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">Телефон</span>
+                  <input type="text" class="form-control" name="phone" placeholder="Номер телефона" value="{{user.phone}}">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">О себе</span>
+                    <textarea class="form-control" name="about" placeholder="О себе">{{ user.about }}</textarea>
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">Дата рождения</span>
+                  <input type="date" class="form-control" name="date_of_birth" placeholder="Дата рождения" value="{{user.date_of_birth}}">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">Фото</span>
+                  <input type="file" class="form-control" name="photo" placeholder="Аватар" accept="image/*">
+                </div>
+                <br/>
+                <div class="input-group">
+                    <button type="submit" class="form-control" name="sbt" placeholder="Аватар">Готово</button>
+                </div>
+            </form>
+        </div>
+{% endblock %}

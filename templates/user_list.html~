@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Список пользователей</title>{% endblock %}
+{% block content %}
+	<h2>Список зарегестрированных пользователей</h2>
+	{% for user in users %}
+	<div class="col-lg-8 col-lg-offset-2 user">
+        <div class="thumbnail small_photo">
+	        <img src="{{user.photo_small.url}}" alt="{{user.username}}" height="100px" width="100px">
+        </div>
+		<a href="{{user.profile}}" class="user_link">{{user.first_name}} {{user.last_name}}</a>
+		<p>{{user.about}}</p>
+	</div>
+	{% endfor %}
+{% endblock %}

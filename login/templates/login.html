@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}<title>Вход</title>{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h4>Вход</h4>
+            {% if show_message %}
+                <div class="alert alert-danger"><p>{{ message }}</p></div>
+            {% endif %}
+            <form action="/log/" method="post" id="loginform">
+               {% csrf_token %}
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" class="form-control" name="username" placeholder="Логин">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">***</span>
+                  <input type="password" class="form-control" name="password" placeholder="Пароль">
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-primary" id="loginbutton">Войти</button>
+                <a class="btn btn-success" href="/registration/" id="signinbutton">Регистрация</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

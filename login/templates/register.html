@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}<title>Регистрация</title>{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h4>Регистрация</h4>
+            {% if show_message %}
+                <div class="alert alert-danger"><p>{{ message }}</p></div>
+            {% endif %}
+            <form action="/newusr/" method="post" id="loginform">
+               {% csrf_token %}
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" class="form-control" name="username" placeholder="Логин">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">***</span>
+                  <input type="password" class="form-control" name="password" placeholder="Пароль">
+                </div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon">***</span>
+                  <input type="password" class="form-control" name="password_again" placeholder="Пароль ещё раз">
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-primary" id="loginbutton">Регистрация</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

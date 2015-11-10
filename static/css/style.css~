@@ -1,0 +1,69 @@
+.copyright{
+	text-align: center;
+}
+.record-inner{
+	text-align: left;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+   	margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    word-break: break-all;
+    //word-wrap: break-word;
+    background: #fff;
+}
+.record{
+	text-align: left;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+   	margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    background: #f8f8f8;
+}
+#header{
+	border: 1px solid #ccc;
+	padding: 20px 20px 20px 20px;
+}
+
+#left-menu{
+	border: 1px solid #ccc;
+    border-top: 0px;
+}
+
+#content{
+	border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+	text-align:center;
+}
+#footer{
+	border: 1px solid #e7e7e7;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+#user{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height:50px;
+	padding-top:15px;
+}
+
+#navigation{
+	float: right;
+}
+#loginform{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+#loginbutton{
+	width: 100%;
+}
+input{
+	margin-bottom: 5px;
+}
+
+
+
